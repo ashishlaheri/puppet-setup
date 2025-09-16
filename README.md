@@ -12,12 +12,14 @@ cd puppet-setup/scripts
 
 ### 2. Setup Puppet Master
 ```bash
+chmod +x install_master.sh
 sudo ./install_master.sh
 sudo ./create_manifests.sh
 ```
 
 ### 3. Setup Puppet Slave
 ```bash
+chmod +x install_slave.sh
 sudo ./install_slave.sh <MASTER_PRIVATE_IP>
 sudo puppet agent --test
 ```
